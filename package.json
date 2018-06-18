@@ -1,0 +1,21 @@
+{
+  "name": "language-todo-extended",
+  "version": "1.0.0",
+  "description": "TODO/FIXME highlighting support in Atom",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/BenjaminHoegh/language-todo-extended",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenjaminHoegh/language-todo-extended.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenjaminHoegh/language-todo-extended/issues"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.10.1"
+  }
+}
