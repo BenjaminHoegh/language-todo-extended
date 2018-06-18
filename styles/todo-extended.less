@@ -1,0 +1,70 @@
+@lightblue: #66d9ef;
+@darkblue: #2C76D7;
+@yellow: #FFEFb7;
+@orange: #FD971F;
+@red: #EE5555;
+@purple: #AE81FF;
+@hotpink: #EF266E;
+
+atom-text-editor:not(.mini) {
+  .syntax--storage {
+    // NOTE|INFO|IDEA|DEBUG|REMOVE|REVIEW|TODO|TASK|TEMP|COMBAK|NB
+    &.syntax--note,
+    &.syntax--info,
+    &.syntax--idea,
+    &.syntax--debug,
+    &.syntax--remove,
+    &.syntax--review,
+    &.syntax--todo,
+    &.syntax--task,
+    &.syntax--changed,
+    &.syntax--temp,
+    &.syntax--combak,
+    &.syntax--nb,
+    &.syntax--question, {
+      color: @lightblue;
+      font-weight: bold;
+    }
+
+    // CHANGED|FIXME
+    &.syntax--fixme,
+    &.syntax--changed {
+        color: @hotpink;
+        font-weight: bold;
+    }
+
+    // QUESTION|EXAMPLE|UPDATE|OPTIMIZE
+    &.syntax--update,
+    &.syntax--example,
+    &.syntax--optimize,
+    &.syntax--question, {
+      color: @darkblue;
+      font-weight: bold;
+    }
+
+    // DEPRECATED
+    &.syntax--deprecated {
+      color: @purple;
+      font-weight: bold;
+    }
+
+    // WARNING|WARN|HACK|XXX
+    &.syntax--warning,
+    &.syntax--warn,
+    &.syntax--xxx,
+    &.syntax--hack {
+      color: @orange;
+      font-weight: bold;
+    }
+
+    // BUG|ERROR|ERR|BROKEN|REFACTOR
+    &.syntax--bug,
+    &.syntax--error,
+    &.syntax--err,
+    &.syntax--broken,
+    &.syntax--refactor {
+      color: @red;
+      font-weight: bold;
+    }
+  }
+}
